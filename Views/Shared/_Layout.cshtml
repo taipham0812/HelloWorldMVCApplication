@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+
+    <link href="~/Content/media.css" rel="stylesheet" />
+
+    <style>
+        .video-overlay {
+            background-color: rgba(0, 0, 0, .7);
+            height: 100vh;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+        }
+
+        #bg-video {
+            height: 100%;
+            left: 0;
+            object-fit: cover;
+            position: relative;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: -1;
+        }
+
+        .navbar-collapse {
+            color: #fff;
+            font-size: 2.4rem;
+            text-decoration: none;
+            font-family: Roboto Slab, serif;
+            padding-top: 50px;
+            padding-bottom: 50px;
+
+         /*   margin-right: 20px !important;
+            margin-left: 40px !important;*/
+        }
+        .navbar-header {
+            margin-right: 20px !important;
+        }
+
+        .navbar-inverse {
+            background-color: transparent !important;
+        }
+            .navbar-inverse .navbar-nav > li > a {
+                color: white !important;
+            }
+
+
+   
+
+        a:visited {
+            color: gray;
+            font-size: 2.4rem;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" title="more options">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+      
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li class="initial-jn">JN.</li>
+                   
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        <div class="video-overlay">           
+            <video autoplay preload="true" loop="" id="bg-video" class="bg-video" src="~/Content/Video/vid.94c9e5a8649ae0338a49.mp4" type="video/mp4"></video>
+        @RenderBody()
+        </div>
+        
+  
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
+

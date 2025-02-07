@@ -1,0 +1,65 @@
+﻿
+@media (max-width: 768px) {
+    .about-content {
+        width: 100% !important; /* Desktop: 100% width */
+        margin-left: 2% !important; /* Desktop: margin-left 20% */
+        padding: 20px;
+        padding-top: 80px !important; /* Desktop: padding-top 100px */
+     
+
+    }
+    .logos {
+        margin-top: 30px !important;
+    }
+    .about-image img {
+        width: 60% !important; /* Reduce the image size to 80% on mobile */
+        margin: 0 auto; /* Optional: Center the image */
+        display: block; /* Optional: Makes sure the image is a block element */
+        margin-left: 20%;
+        display: none;
+    }
+
+    .navbar-collapse {
+ 
+        align-items: center;
+        background-color: #212529;
+     
+
+       
+        z-index: 100;
+    }
+    .initial-jn {
+       display: none ;
+    }
+
+    .nav {
+        padding-left: 78%;
+    }
+
+    form {
+        width: 95%;
+        padding: 1.8rem;
+    }
+
+    .input-container {
+        width: 95%;
+        padding: 1.2rem;
+    }
+
+    .phone-img {
+        width: 55%;
+    }
+
+    .contact-heading {
+        margin: 0 auto;
+    }
+
+
+}
+
+.initial-jn {
+    position: absolute !important;
+    margin-left: 58%;
+    margin-top: 5px;
+    font-size: 40px;
+}
