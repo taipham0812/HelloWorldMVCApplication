@@ -53,7 +53,9 @@
     .contact-heading {
         margin: 0 auto;
     }
-
+    .send-button {
+        margin-left: 13% !important;
+    }
 
 }
 
@@ -63,3 +65,4 @@
     margin-top: 5px;
     font-size: 40px;
 }
+
