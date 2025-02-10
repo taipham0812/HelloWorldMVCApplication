@@ -8,9 +8,7 @@
      
 
     }
-    .logos {
-        margin-top: 30px !important;
-    }
+  
     .about-image img {
         width: 60% !important; /* Reduce the image size to 80% on mobile */
         margin: 0 auto; /* Optional: Center the image */
