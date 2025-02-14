@@ -53,6 +53,11 @@
     .send-button {
         margin-left: 13% !important;
     }
+    .contact-content {
+        width: 100% !important;
+        padding-top: 30px !important;
+        margin-left: -4% !important;
+    }
     .landing-container {
         align-items: center;
         display: flex;
